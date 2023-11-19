@@ -1,5 +1,5 @@
 const categoryId = 10; // Erstatt med IDen til kategorien du vil hente poster fra
-const apiUrl = `http://osloblog.local/wp-json/wp/v2/posts?categories=${categoryId}`;
+const apiUrl = `https://osloblog.local/wp-json/wp/v2/posts?categories=${categoryId}`;
 
 async function fetchPostsByCategory() {
     try {

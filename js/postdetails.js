@@ -5,7 +5,7 @@ const id = params.get("id");
 
 const postDetails = document.querySelector(".postDetails");
 
-const apiUrl = `http://osloblog.local/wp-json/wp/v2/posts/${id}`;
+const apiUrl = `https://osloblog.local/wp-json/wp/v2/posts/${id}`;
 
 function showError(message) {
     const errorContainer = document.querySelector(".postDetails");
