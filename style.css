@@ -513,11 +513,6 @@ h2 {
     text-align: left;
 }
 
-.postDetails figure img {
-    cursor: pointer;
-
-}
-
 .hamburger-menu-details {
     display: none;
 }
