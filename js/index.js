@@ -1,6 +1,6 @@
 const imageContainer = document.getElementById("carousel");
 const arrowIcons = document.querySelectorAll(".wrapper i");
-const apiURL = 'https://sub.kikkin.no/wp-json/wp/v2/posts?per_page=28';
+const apiURL = 'https://kikkin.no/wp-json/wp/v2/posts?per_page=28';
 
 async function fetchAndDisplayImages() {
   try {
