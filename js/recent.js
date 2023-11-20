@@ -1,4 +1,4 @@
-const apiUrl = 'https://osloblog.local/wp-json/wp/v2/posts';
+const apiUrl = 'https://blogg.kikkin.no/wp-json/wp/v2/posts';
 
 let perPage = 10;
 let page = 1;
