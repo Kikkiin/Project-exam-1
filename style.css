@@ -21,13 +21,13 @@ body {
 .headertitle {
     position: absolute;
     top: 20%;
-    left: 75%;
+    left: 60%;
 }
 
 .headertitle2 {
     position: absolute;
-    top: 45%;
-    left: 75%;
+    top: 20%;
+    left: 60%;
 }
 
 .headertitle3 {
@@ -97,14 +97,6 @@ h2 {
         left: 65%;
     }
 
-    .headertitle2 {
-        left: 60%;
-    }
-
-    .headertitle3 {
-
-    }
-
     .headertitle4 {
         left: 50%;
     }
@@ -129,17 +121,17 @@ h2 {
     }
 
     .headertitle {
-        left: 50%;
+        left: 40%;
         top: 120px;
     }
 
     .headertitle2 {
-        left: 40%;
+        left: 20%;
         top: 32%;
     }
 
     .headertitle3 {
-        top: 40%;
+        left: 12%;
         top: 32%;
     }
 
