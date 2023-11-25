@@ -413,8 +413,6 @@ h2 {
     transition: transform 0.3s ease;
   } 
 
-
-
   .post-link:hover .post-overlay {
     transform: translateY(0%); /* Flytter teksten inn i visningen ved hover */
   }
@@ -639,6 +637,11 @@ form label {
 
 .submit-button:hover {
     font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
 }
 
 
