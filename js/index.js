@@ -43,7 +43,7 @@ function setupCarouselNavigation() {
 
       // Sjekk skjermstørrelsen og juster scrollDistance for mobile enheter
       if (window.innerWidth <= 600) { // 600px er et eksempel, juster etter behov
-          scrollDistance += 50; // Mindre verdi for mobile enheter
+          scrollDistance += 20; // Mindre verdi for mobile enheter
       } else {
           scrollDistance += 150; // Større verdi for større skjermer
       }
