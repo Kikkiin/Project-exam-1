@@ -38,10 +38,20 @@ async function fetchAndDisplayImages() {
 function setupCarouselNavigation() {
   const firstImg = imageContainer.querySelector("img");
   if (firstImg) {
-      const firstImgWidth = firstImg.clientWidth + 150;
+      // const firstImgWidth = firstImg.clientWidth + 150;
+      let scrollDistance = firstImg.clientWidth;
+
+      // Sjekk skjermstørrelsen og juster scrollDistance for mobile enheter
+      if (window.innerWidth <= 600) { // 600px er et eksempel, juster etter behov
+          scrollDistance += 50; // Mindre verdi for mobile enheter
+      } else {
+          scrollDistance += 150; // Større verdi for større skjermer
+      }
+
+
       arrowIcons.forEach(icon => {
           icon.addEventListener("click", () => {
-              imageContainer.scrollLeft += icon.id === "left" ? -firstImgWidth : firstImgWidth;
+              imageContainer.scrollLeft += icon.id === "left" ? -scrollDistance : scrollDistance;
           });
       });
   }
