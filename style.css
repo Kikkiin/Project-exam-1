@@ -529,6 +529,12 @@ h2 {
     max-width: 700px; /* Tilpasser maksimal bredde */
 }
 
+.modal-content img {
+    width: 100%; /* Gjør bildet responsivt */
+    height: auto;
+}
+
+
 /* Style for lukkeknappen i modalen */
 .close {
     position: absolute;
@@ -583,6 +589,11 @@ h2 {
         width: 100%;
         height: auto;
         max-width: 600px;
+    }
+
+    .modal-content {
+        max-width: 90%;
+        margin-top: 50px;
     }
 
 }
