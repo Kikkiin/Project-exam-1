@@ -37,7 +37,7 @@ async function fetchPost() {
                                 
                                 </div>`;
 
-    addImageClickHandlers();
+    // addImageClickHandlers();
     addModalEventHandlers();
     
     } catch (error) {
@@ -79,4 +79,6 @@ function addModalEventHandlers() {
 }
 
 
-fetchPost();
+fetchPost().then(() => {
+    addImageClickHandlers();
+});
