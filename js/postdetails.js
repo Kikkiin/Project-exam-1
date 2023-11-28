@@ -50,7 +50,7 @@ function showLoadingIndicator() {
 }
 
 function addImageClickHandlers() {
-    const images = postDetails.querySelectorAll('img, figure img');
+    const images = postDetails.querySelectorAll('img, figure figure img');
     images.forEach(img => {
         img.addEventListener('click', function() {
             const modal = document.getElementById('imageModal');
