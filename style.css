@@ -332,6 +332,7 @@ img {
     font-size: 1.2rem;
     cursor: pointer;
     transform: translateY(-50%);
+    z-index: 2;
 }
 
 .wrapper i:first-child {
@@ -351,10 +352,6 @@ img {
     transition: transform 0.3s ease; */
 }
 
-.carousel-image:hover {
-    transform: scale(1.06);
-}
-
 .carousel-image:first-child {
     margin-left: 0px;
 } 
@@ -366,7 +363,9 @@ img {
     margin-left: 14px; /* Samme som .carousel-image */
     transition: transform 0.3s ease; 
   }
-
+.image-container:hover {
+    transform: scale(1.06);
+}
 
 .image-container:first-child {
     margin-left: 0px; /* Samme som .carousel-image */
