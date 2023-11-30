@@ -305,6 +305,7 @@ img {
 
 .home-header h2 {
     font-size: 15px;
+    margin-top: 130px;
 }
 
 .wrapper .carousel {
@@ -344,9 +345,10 @@ img {
 .carousel-image {
     height: 340px;
     object-fit: cover;
-    width: calc(100% / 4);
+    width: 100%;
+    /* width: calc(100% / 4);
     margin-left: 14px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; */
 }
 
 .carousel-image:hover {
@@ -356,6 +358,85 @@ img {
 .carousel-image:first-child {
     margin-left: 0px;
 } 
+
+.image-container {
+    position: relative;
+    display: inline-block; /* Eller annen passende display-egenskap */
+    width: calc(100% / 4); /* Samme som .carousel-image */
+    margin-left: 14px; /* Samme som .carousel-image */
+    transition: transform 0.3s ease; 
+  }
+
+
+.image-container:first-child {
+    margin-left: 0px; /* Samme som .carousel-image */
+  }
+  
+  .image-container:hover {
+    transform: scale(1.06); /* Samme som .carousel-image */
+  }
+  
+  .image-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Halvgjennomsiktig svart bakgrunn */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center; /* Sentrerer teksten vertikalt */
+    justify-content: center; 
+  }
+  
+  .image-container:hover .image-title {
+    opacity: 1;
+  }
+
+  .text-container p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .home-text {
+    display: flex;
+    margin-top: 170px;
+    margin-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px; 
+    background-color: ;
+  }
+
+  .image-me {
+    border-radius: 50%;
+    width: 250px;
+    height: 280px;
+    margin-left: 20px;
+  }
+
+  hr {
+    border: none; /* Fjerner standard border */
+    height: 1px; /* Setter høyden på linjen */
+    background-color: #333; /* Farge på linjen, endre etter behov */
+    margin: 0; /* Fjerner standard margin for å tillate full bredde */
+    width: 80%; /* Sørger for at linjen strekker seg over hele bredden */
+    margin-top: 170px;
+}
+
+.homebackround {
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.5;
+    margin-bottom: 170px;
+}
+
 
 @media screen and (max-width: 900px) { 
     .carousel-image {

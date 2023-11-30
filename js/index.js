@@ -12,17 +12,30 @@ async function fetchAndDisplayImages() {
 
     posts.forEach(post => {
       if (post.better_featured_image && post.better_featured_image.source_url) { 
+        const container = document.createElement('div');
+        container.className = 'image-container';
 
         const imageElement = document.createElement('img');
         imageElement.src = post.better_featured_image.source_url; 
         imageElement.alt = post.better_featured_image.alt_text || 'Featured image'; 
         imageElement.className = 'carousel-image';
 
+
+        const titleElement = document.createElement('div');
+        titleElement.className = 'image-title';
+        titleElement.textContent = post.title.rendered;
+
         imageElement.addEventListener('click', () => {
           window.location.href = `html/postdetails.html?id=${post.id}`;
         });
 
-        imageContainer.appendChild(imageElement);
+
+        container.appendChild(imageElement);
+        container.appendChild(titleElement);
+
+        imageContainer.appendChild(container);
+
+        // imageContainer.appendChild(imageElement);
 
       }
     });
