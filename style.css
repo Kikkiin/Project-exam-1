@@ -409,7 +409,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     max-width: 600px; 
-    background-color: ;
   }
 
   .image-me {
@@ -439,18 +438,39 @@ img {
 
 
 @media screen and (max-width: 900px) { 
-    .carousel-image {
-        width: calc(100% / 2);
+
+    .image-container {
+        width: calc(50% - 14px);
     }
+
+    .carousel-image {
+        width: 100%;
+    } 
 }
 
 @media screen and (max-width: 550px) {
+    
     .carousel-image {
+        width: 100%;
+    } 
+
+    .image-container {
         width: 100%;
     }
 
     .wrapper i {
         padding: 2%;
+    }
+
+    .home-text {
+        font-size: 12px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-me {
+        margin: auto;
     }
 }
 
@@ -661,7 +681,6 @@ img {
 
     .details-image {
         width: 100%; 
-        padding: 5px;
     }
 
     .postDetails p {
