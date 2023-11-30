@@ -29,7 +29,7 @@ async function fetchPost() {
         postDetails.innerHTML = `<div class="post-intro">
                                     <div class="post-info">
                                         <h1>${post.title.rendered}</h1>
-                                        ${post.better_featured_image ? `<div class="image-container">
+                                        ${post.better_featured_image ? `<div class="">
                                         <img src="${post.better_featured_image.source_url}" alt="${post.title.rendered}" class="details-image">
                                     </div>` : ''}
                                         <p class="post-text">${post.content.rendered}</p>
