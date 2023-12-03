@@ -1,3 +1,4 @@
+
 const imageContainer = document.getElementById("carousel");
 const arrowIcons = document.querySelectorAll(".wrapper i");
 const apiURL = 'https://blogg.kikkin.no/wp-json/wp/v2/posts?per_page=28';
@@ -35,7 +36,6 @@ async function fetchAndDisplayImages() {
 
         imageContainer.appendChild(container);
 
-        // imageContainer.appendChild(imageElement);
 
       }
     });
@@ -51,14 +51,13 @@ async function fetchAndDisplayImages() {
 function setupCarouselNavigation() {
   const firstImg = imageContainer.querySelector("img");
   if (firstImg) {
-      // const firstImgWidth = firstImg.clientWidth + 150;
+
       let scrollDistance = firstImg.clientWidth;
 
-      // Sjekk skjermstørrelsen og juster scrollDistance for mobile enheter
-      if (window.innerWidth <= 600) { // 600px er et eksempel, juster etter behov
-          scrollDistance += 2; // Mindre verdi for mobile enheter
+      if (window.innerWidth <= 600) { 
+          scrollDistance += 2; 
       } else {
-          scrollDistance += 150; // Større verdi for større skjermer
+          scrollDistance += 150; 
       }
 
 

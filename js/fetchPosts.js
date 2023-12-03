@@ -1,3 +1,4 @@
+
 export async function fetchPostsByCategory(apiUrl) {
     try {
       const response = await fetch(apiUrl);
@@ -6,7 +7,7 @@ export async function fetchPostsByCategory(apiUrl) {
       }
       const posts = await response.json();
       const postsContainer = document.querySelector('.blogposts');
-      postsContainer.innerHTML = ''; // Rensker tidligere innlegg
+      postsContainer.innerHTML = ''; 
   
       posts.forEach(post => {
         const postElement = document.createElement('div');

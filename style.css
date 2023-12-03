@@ -215,6 +215,9 @@ img {
 }
 
 
+
+
+
 /*Blogposts pages*/
 
 
@@ -290,8 +293,6 @@ img {
 
 
 
-
-
 /*Home page*/
 
 .home {
@@ -347,9 +348,6 @@ img {
     height: 340px;
     object-fit: cover;
     width: 100%;
-    /* width: calc(100% / 4);
-    margin-left: 14px;
-    transition: transform 0.3s ease; */
 }
 
 .carousel-image:first-child {
@@ -358,9 +356,9 @@ img {
 
 .image-container { 
     position: relative;
-    display: inline-block; /* Eller annen passende display-egenskap */
-    width: calc(100% / 4); /* Samme som .carousel-image */
-    margin-left: 14px; /* Samme som .carousel-image */
+    display: inline-block; 
+    width: calc(100% / 4); 
+    margin-left: 14px; 
     transition: transform 0.3s ease; 
   }
 .image-container:hover {
@@ -368,11 +366,11 @@ img {
 }
 
 .image-container:first-child {
-    margin-left: 0px; /* Samme som .carousel-image */
+    margin-left: 0px;
   }
   
   .image-container:hover {
-    transform: scale(1.06); /* Samme som .carousel-image */
+    transform: scale(1.06); 
   }
   
   .image-title {
@@ -381,14 +379,14 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Halvgjennomsiktig svart bakgrunn */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
     text-align: center;
     padding: 15px;
     opacity: 0;
     transition: opacity 0.3s ease;
     display: flex;
-    align-items: center; /* Sentrerer teksten vertikalt */
+    align-items: center; 
     justify-content: center; 
     pointer-events: none;
   }
@@ -419,11 +417,11 @@ img {
   }
 
   hr {
-    border: none; /* Fjerner standard border */
-    height: 1px; /* Setter høyden på linjen */
-    background-color: #333; /* Farge på linjen, endre etter behov */
-    margin: 0; /* Fjerner standard margin for å tillate full bredde */
-    width: 80%; /* Sørger for at linjen strekker seg over hele bredden */
+    border: none; 
+    height: 1px; 
+    background-color: #333; 
+    margin: 0; 
+    width: 80%; 
     margin-top: 170px;
 }
 
@@ -490,8 +488,8 @@ img {
 .posts {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* This adds space between the posts */
-    justify-content: center; /* This centers the posts in the container */
+    gap: 20px; 
+    justify-content: center; 
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -500,8 +498,7 @@ img {
   }
   
   .post-item {
-    flex: 0 1 calc(50% - 10px); /* This sets the basis for 3 items per row, adjusting for the gap */
-    /* Adjust the percentage for different number of items per row, e.g., 50% for 2 per row */
+    flex: 0 1 calc(50% - 10px); 
     display: flex;
     justify-content: center;
     position: relative;
@@ -522,15 +519,14 @@ img {
   
   .post-link img {
     max-width: 100%;
-    height: auto; /* This ensures the image is responsive and maintains aspect ratio */
-    /*object-fit: cover; /* This removes extra space under the image */
+    height: auto; 
     object-position: end;  
     transition: transform 0.3s ease;
     box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.5); 
   } 
 
   .post-link:hover .post-overlay {
-    transform: translateY(0%); /* Flytter teksten inn i visningen ved hover */
+    transform: translateY(0%); 
   }
 
   .post-link img:hover {
@@ -587,6 +583,7 @@ img {
 
 
 
+
   
 /*Details page*/
 
@@ -623,35 +620,31 @@ img {
     display: none;
 }
 
-/* Style for modalen */
 .modal {
-    display: none; /* Skjult som standard */
-    position: fixed; /* Holder seg på plass */
-    z-index: 2; /* Sørger for at den er over andre elementer */
+    display: none; 
+    position: fixed; 
+    z-index: 2; 
     left: 0;
     top: 0;
-    width: 100%; /* Full bredde */
-    height: 100%; /* Full høyde */
-    overflow: auto; /* Aktiverer rulling ved behov */
-    background-color: rgba(0, 0, 0, 0.7); /* Svart med opasitet */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Style for bildet i modalen */
 .modal-content {
     margin: auto;
     margin-top: 100px;
     display: block;
     width: 80%;
-    max-width: 700px; /* Tilpasser maksimal bredde */
+    max-width: 700px; 
 }
 
 .modal-content img {
-    width: 100%; /*Gjør bildet responsivt */
+    width: 100%;
     height: auto;
 }  
 
-
-/* Style for lukkeknappen i modalen */
 .close {
     position: absolute;
     top: 10px;

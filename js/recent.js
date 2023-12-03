@@ -1,3 +1,4 @@
+
 const apiUrl = 'https://blogg.kikkin.no/wp-json/wp/v2/posts';
 
 let perPage = 10;
@@ -24,7 +25,6 @@ async function displayPostImages() {
   try {
     const posts = await fetchPosts();
     const postsContainer = document.querySelector('.posts');
-    // postsContainer.innerHTML = '';
 
     posts.forEach(post => {
       const postLink = document.createElement('a');
@@ -54,7 +54,7 @@ async function displayPostImages() {
       document.getElementById('load-more').style.display = 'none';
     } else {
       document.getElementById('load-more').style.display = 'block';
-      page++; // Øk sidevariabelen for neste batch av poster
+      page++; 
     }
 
   } catch (error) {

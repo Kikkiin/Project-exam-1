@@ -33,8 +33,7 @@ async function fetchPost() {
                                         <img src="${post.better_featured_image.source_url}" alt="${post.title.rendered}" class="details-image">
                                     </div>` : ''}
                                         <p class="post-text">${post.content.rendered}</p>
-                                    </div>
-                                
+                                    </div>                     
                                 </div>`;
 
     // addImageClickHandlers();
@@ -50,7 +49,7 @@ function showLoadingIndicator() {
 }
 
 function addImageClickHandlers() {
-    const images = postDetails.querySelectorAll('img, figure figure img');
+    const images = postDetails.querySelectorAll('img, figure img');
     images.forEach(img => {
         img.addEventListener('click', function() {
             const modal = document.getElementById('imageModal');
@@ -65,14 +64,12 @@ function addImageClickHandlers() {
 function addModalEventHandlers() {
     const modal = document.getElementById('imageModal');
 
-    // Lukk modalen når det klikkes utenfor bildet
     window.addEventListener('click', function(event) {
         if (event.target == modal) {
             modal.style.display = 'none';
         }
     });
 
-    // Lukk modalen når brukeren klikker på <span> (x)
     document.querySelector('.close').addEventListener('click', function() {
         modal.style.display = 'none';
     });
