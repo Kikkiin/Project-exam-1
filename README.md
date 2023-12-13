@@ -1,7 +1,7 @@
 # Project Exam 1
 # Osloblog: Oslo by blogg
 
-<img src="images/homebackround.jpg" alt="oslo skyline">
+<img src="images/homebackround2.jpg" alt="Image of building in oslo">
 
 An engaging and informative blog dedicated to everything about Oslo, from hidden gems to well-known attractions.
 
