@@ -1,7 +1,8 @@
 # Project Exam 1
 # Osloblog: Oslo by blogg
 
-![oslo skyline] (images/readmeimage.jpg)
+<img src="images/readmeimage.jpg" alt="oslo skyline">
+<!-- ![oslo skyline] (images/readmeimage.jpg) -->
 
  <!-- (https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png) -->
 
@@ -9,16 +10,19 @@ An engaging and informative blog dedicated to everything about Oslo, from hidden
 
 ## Description
 
-The Oslo City Blog is a project created to share insights, stories, and tips about Norway's capital, Oslo. This blog is perfect for both tourists and locals looking to explore the city in a more in-depth manner. The project includes:
+The Oslo City Blog is a project I created to share insights, stories, and tips about Norway's capital, Oslo. This blog is perfect for both tourists and locals looking to explore the city in a more in-depth manner. The project includes:
 
-    - Personal anecdotes and experiences from various places in Oslo
-    - Guides to Oslo's culture, cuisine, and entertainment
-    - Photographs and visual stories that highlight the city's unique character
+- Personal anecdotes and experiences from various places in Oslo
+- Guides to Oslo's culture, cuisine, and entertainment
+- Photographs and visual stories that highlight the city's unique character
 
 ## Built With
 
 The technologies and tools used in this project include:
 
+- HTML
+- Css
+- Javascript
 - [Wordpress](https://wordpress.org/) - fetching images and blogposts from wordpress
 - [Visual studio code](https://code.visualstudio.com/) - Codeeditor
 - [One](https://one.com/) - Hosting my wordpress content
@@ -72,30 +76,22 @@ Live Server Setup
     - Once everything is set up, thoroughly test the website to ensure everything is functioning correctly on the live server.
 
 
-### Running
-
-To run the app, execute the following commands:
-
-```bash
-npm run start
-```
-
 ## Contributing
 
-Anyone interested in contributing to the project, whether it be through content, code improvements, or bug fixes, is welcome to do so. For larger projects, please open a pull request for review before merging your changes.
+Contributions to the project are welcome. To contribute, please open a pull request with your changes for review.
 
 ## Contact
 
 Feel free to contact me for questions, feedback, or collaborations:
 
-[My LinkedIn page](www.linkedin.com)
-
+[My LinkedIn page](https://www.linkedin.com/in/kristin-kristiansen-034878261/)
 [My email](kristinkristiansen9@gmail.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+[My GitHub](https://github.com/Kikkiin)
 
 ## Acknowledgments
 
 Special thanks to everyone who has contributed to the project, especially:
+
+- My fellow student on noroff
+- My teachers on Noroff
+- Linkedin Learning page
