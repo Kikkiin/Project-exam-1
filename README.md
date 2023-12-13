@@ -1,10 +1,7 @@
 # Project Exam 1
 # Osloblog: Oslo by blogg
 
-<img src="images/readmeimage.jpg" alt="oslo skyline">
-<!-- ![oslo skyline] (images/readmeimage.jpg) -->
-
- <!-- (https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png) -->
+<img src="images/homebackround.jpg" alt="oslo skyline">
 
 An engaging and informative blog dedicated to everything about Oslo, from hidden gems to well-known attractions.
 
