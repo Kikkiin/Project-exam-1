@@ -28,49 +28,26 @@ The technologies and tools used in this project include:
 
 ### Installing
 
-This project was developed using Local by Flywheel, exported, coded using Visual Studio Code, and then set up on a live server. Follow these steps to replicate or set up the project:
+This project was developed using Local by Flywheel, exported, coded using Visual Studio Code, and then set up on a live server, fetching data from an API.
 
-1. Setup Local by flywheel:
-    - Download and install Local by Flywheel.
-    - Create a new WordPress site in Local by Flywheel.
+To set up the project locally, follow these steps:
 
-2. Clone the repo:
+1. Clone the repo:
     - Clone the project's GitHub repository to your local machine.
 
 ```bash
 git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-Kikkiin
 ```
-    - Copy the contents from the repository into the corresponding WordPress site in Local by Flywheel (typically into the wp-content folder).
 
-3. Custom development with vscode: 
-    - Use Visual Studio Code to open the cloned repository and make any necessary code changes.
+2. I used Live Server to run the project locally on my computer. To do this, follow these steps:
 
-4. Install the dependencies:
+- Open the project in a code editor, such as Visual Studio Code.
 
-```
-npm install
-```
+- Install the Live Server extension if you haven't already.
 
-5. Import database:
-    - Use Local by Flywheel to import the SQL file containing the website's database.
+- Right-click on an HTML file in the project (like index.html) and select Open with Live Server.
 
-
-Live Server Setup
-
-1. Prepare Live Server:
-    - Ensure you have a web server with WordPress support (like one.com).
-    - Install WordPress on the server.
-
-2. Upload Content:
-    - Use FileZilla or a similar FTP program to upload the wp-content folder from your local WordPress installation to the server.
-    - Upload the SQL database to the server's database.
-
-3. Update WordPress Configuration:
-    - Update the wp-config.php on the server with the correct database connection details.
-    - If the website's URL has changed (from local to live), update the URL in the database. 
-
-4. Test the Website:
-    - Once everything is set up, thoroughly test the website to ensure everything is functioning correctly on the live server.
+- Your browser will automatically open the project on a local server.
 
 
 ## Contributing
